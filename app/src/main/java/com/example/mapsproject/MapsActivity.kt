@@ -44,5 +44,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val sydney = LatLng(-34.0, 151.0)
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+
+        // Second Nairobi marker
+        val nairobi = LatLng(-1.3, 36.85)
+        mMap.addMarker(MarkerOptions().position(nairobi).title("Kanairo"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(nairobi))
+
+        //Third Manjesta Marker
+        val manchester = LatLng(53.48,-2.24)
+        mMap.addMarker(MarkerOptions().position(manchester).title("Manjesta is blue"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(manchester))
+
+        //Fourth Current location marking
     }
 }
